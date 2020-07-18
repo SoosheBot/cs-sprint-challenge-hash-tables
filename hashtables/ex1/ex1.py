@@ -3,16 +3,17 @@ def get_indices_of_item_weights(weights, length, limit):
     YOUR CODE HERE
     """
     # Your code here
+    #set an open dict to cache
     cache = {}
 
-    # if the key is present, get() the key
-    for i in range(length):
-        results = cache.get(limit - weights[i])
+    # loop if the key is present, get() the key
+    for key in range(length):
+        results = cache.get(limit - weights[key])
     
         if results != None:
-            return i, results
+            return key, results
         
-        cache[weights[i]]
+        cache[weights[key]] = key
 
 
     return None
