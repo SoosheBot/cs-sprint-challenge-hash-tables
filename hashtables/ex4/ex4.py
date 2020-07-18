@@ -14,7 +14,7 @@ def has_negatives(a):
         #add all of the numbers to my dictionary
         my_dict[num] = 1
 
-        if num < 0 in my_dict:
+        if num * -1 in my_dict and num != 0:
             pos_nums.append(abs(num))
 
 
