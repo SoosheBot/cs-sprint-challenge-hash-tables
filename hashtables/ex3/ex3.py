@@ -12,7 +12,7 @@ def intersection(arrays):
     
     #find the total for the first list, at the 0th position
     for i in arrays[0]:
-        #set total at the ith position equal to 1
+        #add all i to the total dict
         total[i] = 1
 
     #for every list after
